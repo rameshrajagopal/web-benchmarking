@@ -95,6 +95,31 @@ xsi:schemaLocation="http://Maven.apache.org/POM/4.0.0 http://Maven.apache.org/xs
                     <source>${project.build.directory}/**/*.jtl</source>
                     <targetDirectory>${project.build.directory}/jmeter/test_report</targetDirectory>
                     <processAllFilesFound>true</processAllFilesFound>
+                    <checkResult>
+                        <!-- Optional : check throughput. -->
+                      <throughput>
+                      <!-- Default: -1 (disabling) -->
+                       <threshold>-1</threshold>
+
+              <!-- Default: UPPER_LOWER_TOLERANCE
+            * UPPER_LOWER_TOLERANCE : minValue = (threshold - (threshold * tolerance / 100)), maxValue = (threshold + (threshold * tolerance / 100))
+            If throughput result test is between minValue and maxValue, maven build is OK otherwise, build failed.
+            -->
+                       <toleranceDirection>UPPER_LOWER_TOLERANCE</toleranceDirection>
+
+            <!-- Default: 5 (percent)
+            Used for calculate min et max values.
+            -->
+                        <tolerance>5</tolerance>
+                     </throughput>
+                <!-- Optional : check percent errors. -->
+                    <errors>
+                        <!-- As above -->
+                        <threshold>-1</threshold>
+                        <toleranceDirection>UPPER_LOWER_TOLERANCE</toleranceDirection>
+                        <tolerance>5</tolerance>
+                    </errors>
+                  </checkResult>
                </configuration>
             </execution>
         </executions>
