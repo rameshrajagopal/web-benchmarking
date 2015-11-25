@@ -1,6 +1,6 @@
 search_url
-"v2/stores?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=shoe&countryCode=US"
-"v2/stores?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=nike&countryCode=US"
-"v2/stores?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=laptop&countryCode=US"
-"v2/stores?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=tv&countryCode=US"
-"v2/stores?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=led&countryCode=US"
+"v2/universal/products?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=shoe&countryCode=US"
+"v2/universal/products?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=nike&countryCode=US"
+"v2/universal/products?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=laptop&countryCode=US"
+"v2/universal/products?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=tv&countryCode=US"
+"v2/universal/products?app_id=826fc953&app_key=5b780a909b722a9538d76d6753589d01&q=led&countryCode=US"
