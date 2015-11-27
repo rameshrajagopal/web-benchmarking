@@ -20,7 +20,6 @@ xsi:schemaLocation="http://Maven.apache.org/POM/4.0.0 http://Maven.apache.org/xs
                 Further processing is easier without timestamp though.
              -->
             <testResultsTimestamp>false</testResultsTimestamp>
- 
             <!--
                To simplify debugging, it is advisable to adapt the loglevel.
                The jmeter logs are written to the file jmeter.log.
